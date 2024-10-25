@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+    <head th:fragment="head">
+        <title>Arbol</title>
+        <meta charset="UTF-8" />
+        <link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
+        <link th:href="@{/webjars/font-awesome/css/all.css}" rel="stylesheet"/>
+      
+        <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+        <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
+        <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>    
+    </head>
+    <body>
+        <header th:fragment="header" class="header">
+              <nav class="navbar navbar-expand-lg  bg-success">
+            <div class="container-fluid">
+                <a style="color:white;" class="navbar-brand" th:href="@{/index}">Arbol</a>
+               
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav">
+
+
+                       <li style=" "  class="nav-item px-2 text-white"><a class="nav-link" th:href="@{/arbol/muestra}">Lista Arboles</a></li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+           
+        </header>
+        <footer th:fragment="footer" class="bg-success text-white mt-5 p-2">
+            <div class="container">
+                <div class="col">
+                    <p class="lead text-center">
+                        
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>
+
