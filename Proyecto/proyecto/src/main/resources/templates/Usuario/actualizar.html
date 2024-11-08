@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Actualizar Datos</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">Actualizar Datos</div>
+        <form th:action="@{/usuario/actualizar}" th:object="${usuario}" method="post" class="info-content">
+            <label for="nombreUsuario">Nombre:</label>
+            <input type="text" th:field="*{nombreUsuario}" required>
+            <label for="correoUsuario">Correo:</label>
+            <input type="email" th:field="*{correoUsuario}" required>
+            <button type="submit" class="button">Actualizar</button>
+        </form>
+    </div>
+</body>
+</html>
